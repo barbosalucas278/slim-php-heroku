@@ -136,16 +136,11 @@ class Producto implements IArchivo
             $archivo = fopen($ruta, "w");
             if (isset($archivo)) {
                 $consulta = self::Consultar($producto->GetCodigo(), $listaProductos);
-                echo $consulta;
                 if ($consulta == $producto->GetCodigo()) {
                     $listaProductos = self::Modificar($listaProductos, $producto);
-                    // echo "</br> modificó</br>";
-                    // echo var_dump($listaProductos);
                     $ret = "Actualizado";
                 } else {
                     array_push($listaProductos, $producto);
-                    // echo "</br> no modificó</br>";
-                    // echo var_dump($listaProductos);
                     $ret = "Ingresado";
                 }
                 $listaProductosArray = self::ProductosToArray($listaProductos);
