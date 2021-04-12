@@ -1,0 +1,26 @@
+[
+    {
+        "id": 19449,
+        "codigo": "123456",
+        "nombre": "papa",
+        "tipo": "verdura",
+        "stock": "150",
+        "precio": "50"
+    },
+    {
+        "id": 35802,
+        "codigo": "111111",
+        "nombre": "cebolla",
+        "tipo": "verdura",
+        "stock": 0,
+        "precio": "50"
+    },
+    {
+        "id": 22222,
+        "codigo": "222222",
+        "nombre": "manzana",
+        "tipo": "fruta",
+        "stock": 0,
+        "precio": "20"
+    }
+]
