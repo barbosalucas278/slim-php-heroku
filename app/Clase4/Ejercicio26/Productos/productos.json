@@ -4,7 +4,7 @@
         "codigo": "123456",
         "nombre": "papa",
         "tipo": "verdura",
-        "stock": "150",
+        "stock": 140,
         "precio": "50"
     },
     {

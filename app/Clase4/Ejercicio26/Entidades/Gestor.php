@@ -121,7 +121,7 @@ class Gestor implements IArchivo
      */
     public function Guardar()
     {
-        if ($this->GetEstado() == ACTUALIZADO) {
+        if ($this->GetEstado() == DESACTUALIZADO) {
             $archivo = fopen($this->_Ruta, "w");
             if (isset($archivo)) {
                 $listaEntidadesArray = $this->_Entidad->ToArray($this->_ListaEntidad);

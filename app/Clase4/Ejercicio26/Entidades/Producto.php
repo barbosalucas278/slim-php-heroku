@@ -23,7 +23,6 @@ class Producto extends Entidad implements IProducto
         $this->_Tipo = $tipo;
         $this->SetStock($stock);
         $this->_Precio = $precio;
-        echo "SE CREO";
     }
 
     //
@@ -90,10 +89,8 @@ class Producto extends Entidad implements IProducto
     }
     public function Mapear($dato)
     {
-        echo var_dump($dato);
         if (isset($dato["id"]) && !empty($dato["id"]) && isset($dato["codigo"]) && !empty($dato["codigo"]) && isset($dato["nombre"]) && !empty($dato["nombre"]) && isset($dato["tipo"]) && !empty($dato["tipo"]) && isset($dato["stock"]) && isset($dato["precio"]) && !empty($dato["precio"])) {
             $aux = new Producto($dato["codigo"], $dato["id"], $dato["nombre"], $dato["tipo"], $dato["stock"], $dato["precio"]);
-            echo var_dump($aux);
             return $aux;
         }
     }
