@@ -1,6 +1,6 @@
 <?php
-require_once "./Interfaces/IProducto.php";
-require_once "./Entidad.php";
+require_once "./Entidades/Interfaces/IProducto.php";
+require_once "Entidad.php";
 
 class Producto extends Entidad implements IProducto
 {

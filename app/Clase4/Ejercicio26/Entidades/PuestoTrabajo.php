@@ -1,12 +1,12 @@
 <?php
-require_once "./Interfaces/IComerciable.php";
-require_once "./Gestor.php";
-require_once "./Usuario.php";
-require_once "./Producto.php";
+require_once "./Entidades/Interfaces/IComerciable.php";
+require_once "Gestor.php";
+require_once "Usuario.php";
+require_once "Producto.php";
 
-define("RUTA_CLIENTE", "../Usuarios/usuarios.json");
-define("RUTA_PRODUCTO", "../Productos/productos.json");
-define("RUTA_VENTAS", "../Ventas/ventas.txt");
+define("RUTA_CLIENTE", "./Usuarios/usuarios.json");
+define("RUTA_PRODUCTO", "./Productos/productos.json");
+define("RUTA_VENTAS", "./Ventas/ventas.txt");
 define("VENDIDA", false);
 define("COMPRADA", true);
 class PuestoTrabajo implements IComerciable
@@ -58,7 +58,7 @@ class PuestoTrabajo implements IComerciable
      */
     public function GuardarVenta($nroOperacion, $cliente, $producto, $precio, $cantidad)
     {
-        $fecha = date('d-m-y h:m');
+        $fecha = date('d-m-y h:i:s');
         $monto = $cantidad * $precio;
         $datos = $nroOperacion . "," . $cliente . "," . $producto . "," . $cantidad . "," . $monto . "," . $fecha . "\n";
 

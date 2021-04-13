@@ -12,7 +12,7 @@
         "codigo": "111111",
         "nombre": "cebolla",
         "tipo": "verdura",
-        "stock": 0,
+        "stock": 500,
         "precio": "50"
     },
     {
@@ -20,7 +20,7 @@
         "codigo": "222222",
         "nombre": "manzana",
         "tipo": "fruta",
-        "stock": 0,
+        "stock": 1000,
         "precio": "20"
     }
 ]

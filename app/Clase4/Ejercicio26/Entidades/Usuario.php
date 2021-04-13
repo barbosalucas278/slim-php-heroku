@@ -1,6 +1,6 @@
 <?php
-require_once "./Interfaces/ICliente.php";
-require_once "./Entidad.php";
+require_once "./Entidades/Interfaces/ICliente.php";
+require_once "./Entidades/Entidad.php";
 
 class Usuario extends Entidad implements ICliente
 {

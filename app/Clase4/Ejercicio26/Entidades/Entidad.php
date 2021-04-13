@@ -1,5 +1,5 @@
 <?php
-require_once "./Interfaces/IEntidad.php";
+require_once "./Entidades/Interfaces/IEntidad.php";
 abstract class Entidad implements IEntidad
 {
     //

@@ -1,11 +1,10 @@
 <?php
-require_once "./PuestoTrabajo.php";
-require_once "./Validacion.php";
+require_once "./Entidades/PuestoTrabajo.php";
+require_once "./Entidades/Validacion.php";
 
 if (!isset($_POST["id"]) || !Validacion::EsCodigoDeBarras($_POST["codigo"]) || !isset($_POST["cantidad"])) {
     return http_response_code(400);
 }
-
 
 $idComprador = $_POST["id"];
 $codigo = $_POST["codigo"];

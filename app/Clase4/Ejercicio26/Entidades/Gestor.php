@@ -1,6 +1,6 @@
 <?php
-require_once "./Interfaces/IArchivo.php";
-require_once "./Entidad.php";
+require_once "./Entidades/Interfaces/IArchivo.php";
+require_once "Entidad.php";
 
 
 define("ACTUALIZADO", 1);
