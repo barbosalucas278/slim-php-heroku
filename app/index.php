@@ -12,7 +12,7 @@ $app = new \Slim\App([]);
 
 
 $app->get('[/]', function (Request $request, Response $response) {
-    $response->getBody()->write("Aguante el rojo");
+    $response->getBody()->write("Lucas Barbosa");
     return $response;
 });
 
