@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "c69b2a12-1970-4964-abd2-2bd6ace5831d",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/programacion_III_ejercicios/Clase6/Ejercicio30/AltaProducto.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "codigo",
+							"value": "11223344",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Papas Fritas",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Snack",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "25.50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/programacion_III_ejercicios/Clase6/Ejercicio30/AltaProducto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"programacion_III_ejercicios",
+						"Clase6",
+						"Ejercicio30",
+						"AltaProducto.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/programacion_III_ejercicios/Clase6/Ejercicio30/AltaProducto.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "11223344",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Papas Fritas",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "Snack",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "25.50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/programacion_III_ejercicios/Clase6/Ejercicio30/AltaProducto.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"programacion_III_ejercicios",
+								"Clase6",
+								"Ejercicio30",
+								"AltaProducto.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 21 Apr 2021 13:00:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.6"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.6"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "Actualizado"
+				}
+			]
+		}
+	]
+}
