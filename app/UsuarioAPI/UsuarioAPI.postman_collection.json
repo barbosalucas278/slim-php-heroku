@@ -1,0 +1,640 @@
+{
+	"info": {
+		"_postman_id": "08a79c01-dc1d-408c-b69d-c38a3c4efcf9",
+		"name": "UsuarioAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "111",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"UsuarioAPI",
+						"usuariosAPI",
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "111",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"UsuarioAPI",
+								"usuariosAPI",
+								"usuario",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 May 2021 02:20:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.6"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.6"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1168"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Id\": 101,\n        \"Nombre\": \"Mariano\",\n        \"Apellido\": \"Kautor\",\n        \"Clave\": \"2345\",\n        \"Mail\": \"dkantor0@example.com\",\n        \"FechaDeRegistro\": \"2021-01-07\",\n        \"Localidad\": \"Quilmes\"\n    },\n    {\n        \"Id\": 102,\n        \"Nombre\": \"German\",\n        \"Apellido\": \"Gerram\",\n        \"Clave\": \"1234\",\n        \"Mail\": \"ggerram1@hud.gov\",\n        \"FechaDeRegistro\": \"2020-05-08\",\n        \"Localidad\": \"Berazategui\"\n    },\n    {\n        \"Id\": 103,\n        \"Nombre\": \"Deloris\",\n        \"Apellido\": \"Fosis\",\n        \"Clave\": \"5678\",\n        \"Mail\": \"bsharpe2@wisc.edu\",\n        \"FechaDeRegistro\": \"2020-11-28\",\n        \"Localidad\": \"Avellaneda\"\n    },\n    {\n        \"Id\": 104,\n        \"Nombre\": \"Brok\",\n        \"Apellido\": \"Neiner\",\n        \"Clave\": \"4567\",\n        \"Mail\": \"bblazic3@desdev.cn\",\n        \"FechaDeRegistro\": \"2020-12-08\",\n        \"Localidad\": \"Quilmes\"\n    },\n    {\n        \"Id\": 105,\n        \"Nombre\": \"Garrick\",\n        \"Apellido\": \"Brent\",\n        \"Clave\": \"6789\",\n        \"Mail\": \"gbrent4@theguardian.com\",\n        \"FechaDeRegistro\": \"2020-12-17\",\n        \"Localidad\": \"Moron\"\n    },\n    {\n        \"Id\": 106,\n        \"Nombre\": \"nahuel\",\n        \"Apellido\": \"barbosa\",\n        \"Clave\": \"112233\",\n        \"Mail\": \"nahuel@nahuel.com\",\n        \"FechaDeRegistro\": \"2020-11-27\",\n        \"Localidad\": \"quilmes\"\n    },\n    {\n        \"Id\": 108,\n        \"Nombre\": \"Lucas\",\n        \"Apellido\": \"Barbosa\",\n        \"Clave\": \"333333\",\n        \"Mail\": \"lucas@lucas.com\",\n        \"FechaDeRegistro\": \"2021-04-20\",\n        \"Localidad\": \"varela\"\n    },\n    {\n        \"Id\": 112,\n        \"Nombre\": \"nahuel\",\n        \"Apellido\": \"barbosa\",\n        \"Clave\": \"123\",\n        \"Mail\": \"nahuel@nahuel.com\",\n        \"FechaDeRegistro\": \"2020-11-27\",\n        \"Localidad\": \"quilmes\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "111",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/108",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"UsuarioAPI",
+						"usuariosAPI",
+						"usuario",
+						"108"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "111",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/108",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"UsuarioAPI",
+								"usuariosAPI",
+								"usuario",
+								"108"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 May 2021 02:20:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.6"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.6"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 108,\n    \"Nombre\": \"Lucas\",\n    \"Apellido\": \"Barbosa\",\n    \"Clave\": \"333333\",\n    \"Mail\": \"lucas@lucas.com\",\n    \"FechaDeRegistro\": \"2021-04-20\",\n    \"Localidad\": \"varela\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "nahuel",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "barbosa",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "121212",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "nahuel@nahuel.com",
+							"type": "text"
+						},
+						{
+							"key": "localidad",
+							"value": "quilmes",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"UsuarioAPI",
+						"usuariosAPI",
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "nahuel",
+									"type": "text"
+								},
+								{
+									"key": "apellido",
+									"value": "barbosa",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "121212",
+									"type": "text"
+								},
+								{
+									"key": "mail",
+									"value": "nahuel@nahuel.com",
+									"type": "text"
+								},
+								{
+									"key": "localidad",
+									"value": "quilmes",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"UsuarioAPI",
+								"usuariosAPI",
+								"usuario",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 May 2021 01:37:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.6"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.6"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Resultado\": \"Agregado\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "110",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"UsuarioAPI",
+						"usuariosAPI",
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "111",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"UsuarioAPI",
+								"usuariosAPI",
+								"usuario",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 May 2021 01:50:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.6"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.6"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Resultado\": \"Borrado con exito\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "nahuel",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "barbosa",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "nahuel@nahuel.com",
+							"type": "text"
+						},
+						{
+							"key": "localidad",
+							"value": "quilmes",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "112233",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "106",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"UsuarioAPI",
+						"usuariosAPI",
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "nahuel",
+									"type": "text"
+								},
+								{
+									"key": "apellido",
+									"value": "barbosa",
+									"type": "text"
+								},
+								{
+									"key": "mail",
+									"value": "nahuel@nahuel.com",
+									"type": "text"
+								},
+								{
+									"key": "localidad",
+									"value": "quilmes",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "112233",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "106",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/UsuarioAPI/usuariosAPI/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"UsuarioAPI",
+								"usuariosAPI",
+								"usuario",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 May 2021 02:19:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.6"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.6"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Resultado\": \"Modificado con exito\"\n}"
+				}
+			]
+		}
+	]
+}
