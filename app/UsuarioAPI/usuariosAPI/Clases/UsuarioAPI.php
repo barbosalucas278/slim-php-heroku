@@ -102,10 +102,11 @@ class UsuarioAPI extends Usuario implements IApiUsable
             if (!is_null($listado)) {
                 foreach ($listado as $usuario) {
                     if ($usuario->GetMail() == $mail) {
-                        if ($clave == $usuario->GetClave()) {
-                            return $response->withJson($usuario, 200);
+                        if (password_verify($clave, $usuario->GetClave())) {
+                            $resultado = ["Id" => $usuario->Id];
+                            return $response->withJson($resultado, 200);
                         } else {
-                            throw new Exception("La contraseña es incorrecta" . $usuario->GetClave(), 0);
+                            throw new Exception("La contraseña es incorrecta", 0);
                         }
                     }
                 }

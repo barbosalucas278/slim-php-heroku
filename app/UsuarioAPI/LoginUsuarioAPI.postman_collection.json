@@ -626,7 +626,7 @@
 						},
 						{
 							"key": "clave",
-							"value": "112233",
+							"value": "121212",
 							"type": "text"
 						}
 					]
@@ -662,7 +662,7 @@
 								},
 								{
 									"key": "clave",
-									"value": "112233",
+									"value": "121212",
 									"type": "text"
 								}
 							]
@@ -688,7 +688,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Sun, 09 May 2021 22:51:26 GMT"
+							"value": "Sun, 09 May 2021 23:07:30 GMT"
 						},
 						{
 							"key": "Server",
@@ -700,7 +700,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "146"
+							"value": "10"
 						},
 						{
 							"key": "Keep-Alive",
@@ -716,7 +716,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"Id\": 106,\n    \"Nombre\": \"nahuel\",\n    \"Apellido\": \"barbosa\",\n    \"Clave\": \"112233\",\n    \"Mail\": \"nahuel@nahuel.com\",\n    \"FechaDeRegistro\": \"2020-11-27\",\n    \"Localidad\": \"quilmes\"\n}"
+					"body": "{\n    \"Id\": 113\n}"
 				}
 			]
 		}
