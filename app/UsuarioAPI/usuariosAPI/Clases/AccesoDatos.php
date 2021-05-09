@@ -1,9 +1,6 @@
 <?php
 //Variables para uso local
-// define("MYSQL_HOST", "remotemysql.com");
-// define("MYSQL_USER", "0bnIdYwns5");
-// define("MYSQL_PASS", "KwadraP0eq");
-// define("MYSQL_DB", "0bnIdYwns5");
+
 class AccesoDatos
 {
     private static $_ObjetoAccesoDatos;
