@@ -21,6 +21,8 @@ $app->group('/usuario', function () {
 
   $this->get('/{id}', \UsuarioAPI::class . ':traerUno');
 
+  $this->post('/login', \UsuarioAPI::class . ':Login');
+
   $this->post('/', \UsuarioAPI::class . ':CargarUno');
 
   $this->delete('/', \UsuarioAPI::class . ':BorrarUno');

@@ -88,6 +88,33 @@ class UsuarioAPI extends Usuario implements IApiUsable
             return $newResponse = $response->withJson($datosError, 500);
         }
     }
+    public function Login($request, $response, $args)
+    {
+        $datosIngresados = $request->getParsedBody();
+        if (!isset($datosIngresados["clave"]) && !Validacion::EsMail($datosIngresados["mail"])) {
+            $error = ["Error" => "Datos incompletos"];
+            return $response->withJson($error, 400);
+        }
+        try {
+            $clave = $datosIngresados["clave"];
+            $mail = $datosIngresados["mail"];
+            $listado = Usuario::GetAll();
+            if (!is_null($listado)) {
+                foreach ($listado as $usuario) {
+                    if ($usuario->GetMail() == $mail) {
+                        if ($clave == $usuario->GetClave()) {
+                            return $response->withJson($usuario, 200);
+                        } else {
+                            throw new Exception("La contraseña es incorrecta" . $usuario->GetClave(), 0);
+                        }
+                    }
+                }
+                throw new Exception("El mail no existe", 0);
+            }
+        } catch (Exception $ex) {
+            throw new Exception("Ocurrio un problema al logear " . $ex->getMessage(), 0, $ex);
+        }
+    }
     public function ModificarUno($request, $response, $args)
     {
         $datosIngresados = $request->getParsedBody();
@@ -111,7 +138,7 @@ class UsuarioAPI extends Usuario implements IApiUsable
         } catch (Exception $ex) {
             $error = $ex->getMessage();
             $datosError = ["Error" => $error];
-            return $newResponse = $response->withJson($datosError, 500);
+            return $response->withJson($datosError, 500);
         }
     }
 }

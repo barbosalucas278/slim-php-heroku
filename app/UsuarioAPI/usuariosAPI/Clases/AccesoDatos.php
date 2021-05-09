@@ -1,4 +1,9 @@
 <?php
+//Variables para uso local
+// define("MYSQL_HOST", "remotemysql.com");
+// define("MYSQL_USER", "0bnIdYwns5");
+// define("MYSQL_PASS", "KwadraP0eq");
+// define("MYSQL_DB", "0bnIdYwns5");
 class AccesoDatos
 {
     private static $_ObjetoAccesoDatos;
@@ -8,11 +13,17 @@ class AccesoDatos
     {
         try {
             $this->_PDO = new PDO(
-                'mysql:host=' . getenv('MYSQL_HOST') . ';dbname=' . getenv('MYSQL_DB') . ';charset=utf8',
-                getenv('MYSQL_USER'),
-                getenv('MYSQL_PASS'),
+                'mysql:host=' . getenv('MYSQL_HOST') . ';dbname=clase4;charset=utf8',
+                'root',
+                '',
                 array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
             );
+            // $this->_PDO = new PDO(
+            //     'mysql:host=' . MYSQL_HOST . ';dbname=' . MYSQL_DB . ';charset=utf8',
+            //     MYSQL_USER,
+            //     MYSQL_PASS,
+            //     array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
+            // );
         } catch (PDOException $ex) {
             print "Error!:" . $ex->getMessage();
             die();

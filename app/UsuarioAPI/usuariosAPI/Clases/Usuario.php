@@ -35,7 +35,7 @@ class Usuario
             $this->Apellido = $apellido;
         }
     }
-    public function Clave($clave)
+    public function SetClave($clave)
     {
         if (isset($clave)) {
             $this->Clave = $clave;
@@ -52,6 +52,14 @@ class Usuario
         if (isset($localidad)) {
             $this->Localidad = $localidad;
         }
+    }
+    public function GetClave()
+    {
+        return $this->Clave;
+    }
+    public function GetMail()
+    {
+        return $this->Mail;
     }
     public function ModificarClave()
     {
@@ -180,7 +188,7 @@ class Usuario
             $consulta->bindValue(':localidad', $this->Localidad, PDO::PARAM_STR);
             return $consulta->execute();
         } catch (Exception $th) {
-            throw new Exception("No agrego correctamente " . $th->getMessage(), 1, $th);
+            throw new Exception("No agrego correctamente " . $th->getMessage() . $this->Clave, 1, $th);
         }
     }
 
@@ -210,24 +218,5 @@ class Usuario
     public function MostrarDatos()
     {
         return "$this->Nombre,$this->Apellido,$this->Clave,$this->Mail,$this->FechaDeRegistro,$this->Localidad";
-    }
-    public static function Login($mail, $clave)
-    {
-        $respuesta = 0;
-        $listado = self::GetAll();
-        if (!is_null($listado)) {
-            foreach ($listado as $usuario) {
-                if ($usuario->GetMail() == $mail) {
-                    if ($usuario->GetClave() == $clave) {
-                        $respuesta = 1;
-                        return $respuesta;
-                    } else {
-                        $respuesta = -1;
-                        break;
-                    }
-                }
-            }
-        }
-        return $respuesta;
     }
 }
